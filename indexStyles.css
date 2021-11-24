@@ -1,0 +1,42 @@
+body{
+    margin: 25 px;
+    padding:25px 50px;
+    background-color: #D6EAF8;
+}
+
+@font-face {
+    font-family: themeillion;
+    src: url(Peachy_Mochi.ttf);
+
+}
+
+.logo{
+    text-align: left;
+}
+
+.h1{
+    font-family: BodoniXT;
+    src: url(BodoniXT.ttf);
+}
+
+.title{
+    font-family: themeillion;
+    padding: 16px;
+    background-color: #5DADE2;
+
+}
+
+img{
+    display:block;
+    margin:auto;
+    padding-bottom: 5px;
+    }
+
+.form{
+    margin-top:40px;
+}
+
+
+.footer{
+    background-color:#AED6F1
+}
