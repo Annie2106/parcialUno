@@ -1,6 +1,6 @@
 console.log("Script loader!");
 var form1 = document.getElementById("form");
-var getContent = document.getElementById("form-info") 
+var getContent = document.getElementById("form-info")  
 
 form1.addEventListener("submit", function(event){
    var name = form1.elements["name"].value
@@ -9,8 +9,7 @@ form1.addEventListener("submit", function(event){
    console.log(event);
    console.log("submit");
    console.log(data);   //-->Así lo dejó el profe
-   getContent.innerHTML +=  "<div>" +data.names+data.lastNames+data.email+data.inputemailVerify+data.phone+data.birth+data.height+data.password+data.passwordReview+data.bio+"</div>";
-   
+   getContent.innerHTML +=  "<div>" +data.names+data.lastNames+data.email+data.inputemailVerify+data.phone+data.birth+data.height+data.password+data.passwordReview+data.bio+"</div>";   
    
    
 });
