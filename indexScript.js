@@ -9,18 +9,22 @@ form1.addEventListener("submit", function(event){
    console.log(event);
    console.log("submit");
    console.log(data);   //-->Así lo dejó el profe
-   getContent.innerHTML +=  "<div>" +data.names+data.lastNames+data.inputEmail3+data.inputemailVerify+data.phone+data.birth+data.height+data.password+data.passwordReview+data.bio+"</div>";
+   getContent.innerHTML +=  "<div>" +data.names+data.lastNames+data.email+data.inputemailVerify+data.phone+data.birth+data.height+data.password+data.passwordReview+data.bio+"</div>";
+   
    
    
 });
 
 
-  function informationKeep(){
+  /*function informationKeep(){
   const data = Object.fromEntries(new FormData(event.target).entries());
   const info = document.getElementById("information");
   const paragraph = document.getElementById("show")
   paragraph.innerHTML = `${info }`;
   }
+  
+  
+  la llamaba con onclick en el botón*/
 
 
 

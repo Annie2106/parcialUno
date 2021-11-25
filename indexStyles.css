@@ -10,8 +10,10 @@ body{
 
 }
 
-.logo{
-    text-align: left;
+.logo > img{
+    display: flex !important;
+    justify-content: end;
+    margin: 0px;
 }
 
 .h1{
