@@ -1,5 +1,0 @@
-archivo de texto palno que tengan  sin estilos ni colores
-4 contenderores básicos div cada div con untexto largo
-en parrafos o spam o h
-header  title
-footer con link  

@@ -42,3 +42,10 @@ img{
 .footer{
     background-color:#AED6F1
 }
+
+.changeElement{
+    background-color:#BEBEBE;
+    font-family: BodoniXT;
+    src: url(BodoniXT.ttf);
+
+}
