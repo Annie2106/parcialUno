@@ -29,22 +29,38 @@ form1.addEventListener("submit", function(event){
 
 
   function chage(){
+     //
      const containerJavaScript = document.getElementById('javaScriptChange');
-     const containerPython = document.getElementById('pythonPython');
+     const containerPython = document.getElementById('pythonChange');
+     const containerJava = document.getElementById('javaChange');
+     const containerC = document.getElementById('cChange');
+
      const labelJavaScript = document.getElementById('javaScriptLabelChange');
-     containerJavaScript.addEventListener('click', () => {
-        
+     const labelPython = document.getElementById('PythonLabelChange');
+     const labelJava = document.getElementById('javaLabelChange');
+     const labeLc = document.getElementById('cLabelChange');
+
+
+     //
+     containerJavaScript.addEventListener('click', () => { 
       containerJavaScript.classList.toggle("changeColor");
       labelJavaScript.classList.toggle("labelChangeColor");
-
-
       containerJavaScript.classList.toggle("changeElement");
        labelJavaScript.classList.toggle("colorLabel");
      });
+     containerPython.addEventListener('click', () => { 
+      containerPython.classList.toggle("changeColor");
+      labelPython.classList.toggle("labelChangeColor");
+      containerPython.classList.toggle("changeElement");
+       labelPython.classList.toggle("colorLabel");
+     });
+     containerJava.addEventListener('click', () => { 
+      containerJava.classList.toggle("changeColor");
+      labelJava.classList.toggle("labelChangeColor");
+      containerJava.classList.toggle("changeElement");
+       labelJava.classList.toggle("colorLabel");
+     });
 
-    
-    
-     containerPython.addEventListener()
 
   }
   
