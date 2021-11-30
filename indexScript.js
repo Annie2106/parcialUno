@@ -9,7 +9,20 @@ form1.addEventListener("submit", function(event){
    console.log(event);
    console.log("submit");
    console.log(data);   //-->Así lo dejó el profe
-   getContent.innerHTML +=  "<div>" +data.name+data.lastNames+data.email+data.inputemailVerify+data.phone+data.adress+data.birth+data.height+data.password+data.passwordReview+data.bio+"</div>";   
+   
+   getContent.innerHTML +=  "<div>" +data.name+data.lastNames+data.email+data.emailVerify+data.phone+data.address+data.birth+data.height+data.password+data.passwordReview+data.bio+"</div>";   
+   
+   getContent.innerHTML +=  "<div>" +data.lastNames+"</div>"; 
+   getContent.innerHTML +=  "<div>" +data.email+"</div>"; 
+   getContent.innerHTML +=  "<div>" +data.emailVerify+"</div>"; 
+   getContent.innerHTML +=  "<div>" +data.phone+"</div>"; 
+   getContent.innerHTML +=  "<div>" +data.address+"</div>"; 
+   getContent.innerHTML +=  "<div>" +data.birth+"</div>"; 
+   getContent.innerHTML +=  "<div>" +data.height+"</div>"; 
+   getContent.innerHTML +=  "<div>" +data.password+"</div>"; 
+   getContent.innerHTML +=  "<div>" +data.passwordReview+"</div>"; 
+   getContent.innerHTML +=  "<div>" +data.bio+"</div>"; 
+
    
    
 });
