@@ -9,7 +9,7 @@ form1.addEventListener("submit", function(event){
    console.log(event);
    console.log("submit");
    console.log(data);   //-->Así lo dejó el profe
-   getContent.innerHTML +=  "<div>" +data.names+data.lastNames+data.email+data.inputemailVerify+data.phone+data.birth+data.height+data.password+data.passwordReview+data.bio+"</div>";   
+   getContent.innerHTML +=  "<div>" +data.name+data.lastNames+data.email+data.inputemailVerify+data.phone+data.adress+data.birth+data.height+data.password+data.passwordReview+data.bio+"</div>";   
    
    
 });
