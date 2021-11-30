@@ -21,7 +21,7 @@ form1.addEventListener("submit", function(event){
    getContent.innerHTML +=  "<div>" +data.height+"</div>"; 
    getContent.innerHTML +=  "<div>" +data.password+"</div>"; 
    getContent.innerHTML +=  "<div>" +data.passwordReview+"</div>"; 
-   getContent.innerHTML +=  "<div>" +data.bio+"</div>"; 
+   getContent.innerHTML +=  "<div>" +data.textarea+"</div>"; 
 
    
    
