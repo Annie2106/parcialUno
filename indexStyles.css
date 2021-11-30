@@ -40,12 +40,30 @@ img{
 
 
 .footer{
-    background-color:#AED6F1
+    background-color:#bebebe38
 }
 
 .changeElement{
-    background-color:#BEBEBE;
+    background-color:#bebebe38;
     font-family: BodoniXT;
     src: url(BodoniXT.ttf);
+
+}
+
+.colorLabel{
+
+    color: #FFE900;
+}
+
+.changeColor{
+    background-color:#FFE900 ;
+    font-family: BodoniXT;
+    src: url(BodoniXT.ttf);
+    
+
+}
+
+.labelChangeColor{
+    color: #bebebe38;
 
 }

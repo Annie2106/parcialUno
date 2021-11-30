@@ -10,7 +10,7 @@ form1.addEventListener("submit", function(event){
    console.log("submit");
    console.log(data);   //-->Así lo dejó el profe
    
-   getContent.innerHTML +=  "<div>" +data.name+data.lastNames+data.email+data.emailVerify+data.phone+data.address+data.birth+data.height+data.password+data.passwordReview+data.bio+"</div>";   
+   /*getContent.innerHTML +=  "<div>" +data.name+data.lastNames+data.email+data.emailVerify+data.phone+data.address+data.birth+data.height+data.password+data.passwordReview+data.bio+"</div>";   */
    
    getContent.innerHTML +=  "<div>" +data.lastNames+"</div>"; 
    getContent.innerHTML +=  "<div>" +data.email+"</div>"; 
@@ -28,16 +28,24 @@ form1.addEventListener("submit", function(event){
 });
 
 
-  /*function informationKeep(){
-  const data = Object.fromEntries(new FormData(event.target).entries());
-  const info = document.getElementById("information");
-  const paragraph = document.getElementById("show")
-  paragraph.innerHTML = `${info }`;
+  function chage(){
+     const containerJavaScript = document.getElementById('javaScriptChange');
+     const containerPython = document.getElementById('pythonPython');
+     const labelJavaScript = document.getElementById('javaScriptLabelChange');
+     containerJavaScript.addEventListener('click', () => {
+        
+      containerJavaScript.classList.toggle("changeColor");
+      labelJavaScript.classList.toggle("labelChangeColor");
+
+
+      containerJavaScript.classList.toggle("changeElement");
+       labelJavaScript.classList.toggle("colorLabel");
+     });
+
+    
+    
+     containerPython.addEventListener()
+
   }
   
-  
-  la llamaba con onclick en el botón*/
-
-
-
-
+  chage();
