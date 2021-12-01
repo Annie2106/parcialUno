@@ -36,12 +36,14 @@ form1.addEventListener("submit", function(event){
      const containerC = document.getElementById('cChange');
      const containerPHP = document.getElementById('phpChange');
      const containerCchar = document.getElementById('cCharChange');
+     const containerGo = document.getElementById('goChange');
 
      const labelPython = document.getElementById('PythonLabelChange');
      const labelJava = document.getElementById('javaLabelChange');
      const labeLc = document.getElementById('cLabelChange');
      const labeLPHP = document.getElementById('PHPLabelChange');
      const labelCchar = document.getElementById('cCharLabelChange');
+     const labelGo = document.getElementById('goLabelChange');
 
 
      //
@@ -80,6 +82,12 @@ form1.addEventListener("submit", function(event){
       labelCchar.classList.toggle("labelChangeColor");
       containerCchar.classList.toggle("changeElement");
       labelCchar.classList.toggle("colorLabel");
+     });
+     containerGo.addEventListener('click', () => { 
+      containerGo.classList.toggle("changeColor");
+      labelGo.classList.toggle("labelChangeColor");
+      containerGo.classList.toggle("changeElement");
+      labelGo.classList.toggle("colorLabel");
      });
 
 
