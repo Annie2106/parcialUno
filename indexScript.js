@@ -35,21 +35,11 @@ form1.addEventListener("submit", function(event){
      const containerJava = document.getElementById('javaChange');
      const containerC = document.getElementById('cChange');
      const containerPHP = document.getElementById('phpChange');
-     const containerCchar = document.getElementById('cCharChange');
-     const containerGo = document.getElementById('goChange');
-     const containerGo = document.getElementById('scalaChange');
-     const containerKotlin = document.getElementById('kotlinChange');
-     const containerSwift = document.getElementById('swiftChange');
 
      const labelPython = document.getElementById('PythonLabelChange');
      const labelJava = document.getElementById('javaLabelChange');
      const labeLc = document.getElementById('cLabelChange');
      const labeLPHP = document.getElementById('PHPLabelChange');
-     const labelCchar = document.getElementById('cCharLabelChange');
-     const labelGo = document.getElementById('goLabelChange');
-     const labelScala = document.getElementById('scalaLabelChange');
-     const labelKotlin = document.getElementById('kotlinLabelChange');
-     const labelSwift = document.getElementById('swiftLabelChange');
 
 
      //
@@ -83,36 +73,9 @@ form1.addEventListener("submit", function(event){
       containerPHP.classList.toggle("changeElement");
       labeLPHP.classList.toggle("colorLabel");
      });
-     containerCchar.addEventListener('click', () => { 
-      containerCchar.classList.toggle("changeColor");
-      labelCchar.classList.toggle("labelChangeColor");
-      containerCchar.classList.toggle("changeElement");
-      labelCchar.classList.toggle("colorLabel");
-     });
-     containerGo.addEventListener('click', () => { 
-      containerGo.classList.toggle("changeColor");
-      labelGo.classList.toggle("labelChangeColor");
-      containerGo.classList.toggle("changeElement");
-      labelGo.classList.toggle("colorLabel");
-     });
-     containerGo.addEventListener('click', () => { 
-      containerGo.classList.toggle("changeColor");
-      scalaLabelChange.classList.toggle("labelChangeColor");
-      containerGo.classList.toggle("changeElement");
-      scalaLabelChange.classList.toggle("colorLabel");
-     });
-     containerKotlin.addEventListener('click', () => { 
-      containerKotlin.classList.toggle("changeColor");
-      labelKotlin.classList.toggle("labelChangeColor");
-      containerKotlin.classList.toggle("changeElement");
-      labelKotlin.classList.toggle("colorLabel");
-     });
-     containerSwift.addEventListener('click', () => { 
-      containerSwift.classList.toggle("changeColor");
-      labelSwift.classList.toggle("labelChangeColor");
-      containerSwift.classList.toggle("changeElement");
-      labelSwift.classList.toggle("colorLabel");
-     });
+
+
 
   }
+  
   chage();
