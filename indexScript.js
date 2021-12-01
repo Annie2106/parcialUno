@@ -37,6 +37,8 @@ form1.addEventListener("submit", function(event){
      const containerPHP = document.getElementById('phpChange');
      const containerCchar = document.getElementById('cCharChange');
      const containerGo = document.getElementById('goChange');
+     const containerGo = document.getElementById('scalaChange');
+     const containerKotlin = document.getElementById('kotlinChange');
 
      const labelPython = document.getElementById('PythonLabelChange');
      const labelJava = document.getElementById('javaLabelChange');
@@ -44,6 +46,8 @@ form1.addEventListener("submit", function(event){
      const labeLPHP = document.getElementById('PHPLabelChange');
      const labelCchar = document.getElementById('cCharLabelChange');
      const labelGo = document.getElementById('goLabelChange');
+     const labelScala = document.getElementById('scalaLabelChange');
+     const labelKotlin = document.getElementById('kotlonLabelChange');
 
 
      //
@@ -88,6 +92,18 @@ form1.addEventListener("submit", function(event){
       labelGo.classList.toggle("labelChangeColor");
       containerGo.classList.toggle("changeElement");
       labelGo.classList.toggle("colorLabel");
+     });
+     containerGo.addEventListener('click', () => { 
+      containerGo.classList.toggle("changeColor");
+      scalaLabelChange.classList.toggle("labelChangeColor");
+      containerGo.classList.toggle("changeElement");
+      scalaLabelChange.classList.toggle("colorLabel");
+     });
+     containerKotlin.addEventListener('click', () => { 
+      containerKotlin.classList.toggle("changeColor");
+      labelKotlin.classList.toggle("labelChangeColor");
+      containerKotlin.classList.toggle("changeElement");
+      labelKotlin.classList.toggle("colorLabel");
      });
 
 
