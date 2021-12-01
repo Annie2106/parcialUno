@@ -35,11 +35,17 @@ form1.addEventListener("submit", function(event){
      const containerJava = document.getElementById('javaChange');
      const containerC = document.getElementById('cChange');
      const containerPHP = document.getElementById('phpChange');
+     const containerCchar = document.getElementById('cCharChange');
+     const containerGo = document.getElementById('goChange');
+     const containerScala = document.getElementById('scalaChange');
 
      const labelPython = document.getElementById('PythonLabelChange');
      const labelJava = document.getElementById('javaLabelChange');
      const labeLc = document.getElementById('cLabelChange');
      const labeLPHP = document.getElementById('PHPLabelChange');
+     const labeLcChar = document.getElementById('cCharLabelChange');
+     const labeLGo = document.getElementById('goLabelChange');
+     const labeLScala = document.getElementById('scalaLabelChange');
 
 
      //
@@ -73,6 +79,25 @@ form1.addEventListener("submit", function(event){
       containerPHP.classList.toggle("changeElement");
       labeLPHP.classList.toggle("colorLabel");
      });
+     containerCchar.addEventListener('click', () => { 
+      containerCchar.classList.toggle("changeColor");
+      labeLcChar.classList.toggle("labelChangeColor");
+      containerCchar.classList.toggle("changeElement");
+      labeLcChar.classList.toggle("colorLabel");
+     });
+     containerGo.addEventListener('click', () => { 
+      containerGo.classList.toggle("changeColor");
+      labeLGo.classList.toggle("labelChangeColor");
+      containerGo.classList.toggle("changeElement");
+      labeLGo.classList.toggle("colorLabel");
+     });
+     containerScala.addEventListener('click', () => { 
+      containerScala.classList.toggle("changeColor");
+      labeLScala.classList.toggle("labelChangeColor");
+      containerScala.classList.toggle("changeElement");
+      labeLScala.classList.toggle("colorLabel");
+     });
+
 
 
 
