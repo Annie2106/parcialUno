@@ -5,9 +5,17 @@ body{
 }
 
 @font-face {
-    font-family: themeillion;
-    src: url(Peachy_Mochi.ttf);
+    font-family: peachy;
+    src: url(./fontsResources/Peachy_Mochi.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: themeillion;
+    src: url(./fontsResources/BodoniXT.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
 
 .logo > img{
@@ -17,8 +25,7 @@ body{
 }
 
 .h1{
-    font-family: BodoniXT;
-    src: url(BodoniXT.ttf);
+    font-family: peachy;
 }
 
 .title{
@@ -40,12 +47,23 @@ img{
 
 
 .footer{
-    background-color:#AED6F1
+    background-color:#bebebe38
 }
 
 .changeElement{
-    background-color:#BEBEBE;
-    font-family: BodoniXT;
-    src: url(BodoniXT.ttf);
+    background-color:#bebebe38;
+}
+
+.colorLabel{
+
+    color: #FFE900;
+}
+
+.changeColor{
+    background-color:#FFE900 ;
+}
+
+.labelChangeColor{
+    color: #bebebe38;
 
 }
