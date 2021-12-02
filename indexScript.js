@@ -37,13 +37,19 @@ form1.addEventListener("submit", function(event){
      const containerPHP = document.getElementById('phpChange');
      const containerCchar = document.getElementById('cCharChange');
      const containerGo = document.getElementById('goChange');
+     const containerScala = document.getElementById('scalaChange');
+     const containerKotlin = document.getElementById('kotlinChange');
+     const containerswift = document.getElementById('swiftChange');
 
      const labelPython = document.getElementById('PythonLabelChange');
      const labelJava = document.getElementById('javaLabelChange');
      const labeLc = document.getElementById('cLabelChange');
      const labeLPHP = document.getElementById('PHPLabelChange');
-     const labelCchar = document.getElementById('cCharLabelChange');
-     const labelGo = document.getElementById('goLabelChange');
+     const labeLcChar = document.getElementById('cCharLabelChange');
+     const labeLGo = document.getElementById('goLabelChange');
+     const labeLScala = document.getElementById('scalaLabelChange');
+     const labeLKotlin = document.getElementById('kotlinLabelChange');
+     const labeLswift = document.getElementById('swiftLabelChange');
 
 
      //
@@ -79,17 +85,34 @@ form1.addEventListener("submit", function(event){
      });
      containerCchar.addEventListener('click', () => { 
       containerCchar.classList.toggle("changeColor");
-      labelCchar.classList.toggle("labelChangeColor");
+      labeLcChar.classList.toggle("labelChangeColor");
       containerCchar.classList.toggle("changeElement");
-      labelCchar.classList.toggle("colorLabel");
+      labeLcChar.classList.toggle("colorLabel");
      });
      containerGo.addEventListener('click', () => { 
       containerGo.classList.toggle("changeColor");
-      labelGo.classList.toggle("labelChangeColor");
+      labeLGo.classList.toggle("labelChangeColor");
       containerGo.classList.toggle("changeElement");
-      labelGo.classList.toggle("colorLabel");
+      labeLGo.classList.toggle("colorLabel");
      });
-
+     containerScala.addEventListener('click', () => { 
+      containerScala.classList.toggle("changeColor");
+      labeLScala.classList.toggle("labelChangeColor");
+      containerScala.classList.toggle("changeElement");
+      labeLScala.classList.toggle("colorLabel");
+     });
+     containerKotlin.addEventListener('click', () => { 
+      containerKotlin.classList.toggle("changeColor");
+      labeLKotlin.classList.toggle("labelChangeColor");
+      containerKotlin.classList.toggle("changeElement");
+      labeLKotlin.classList.toggle("colorLabel");
+     });
+     containerswift.addEventListener('click', () => { 
+      containerswift.classList.toggle("changeColor");
+      labeLswift.classList.toggle("labelChangeColor");
+      containerswift.classList.toggle("changeElement");
+      labeLswift.classList.toggle("colorLabel");
+     });
 
 
   }
