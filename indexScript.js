@@ -38,6 +38,8 @@ form1.addEventListener("submit", function(event){
      const containerCchar = document.getElementById('cCharChange');
      const containerGo = document.getElementById('goChange');
      const containerScala = document.getElementById('scalaChange');
+     const containerKotlin = document.getElementById('kotlinChange');
+     const containerswift = document.getElementById('swiftChange');
 
      const labelPython = document.getElementById('PythonLabelChange');
      const labelJava = document.getElementById('javaLabelChange');
@@ -46,6 +48,8 @@ form1.addEventListener("submit", function(event){
      const labeLcChar = document.getElementById('cCharLabelChange');
      const labeLGo = document.getElementById('goLabelChange');
      const labeLScala = document.getElementById('scalaLabelChange');
+     const labeLKotlin = document.getElementById('kotlinLabelChange');
+     const labeLswift = document.getElementById('swiftLabelChange');
 
 
      //
@@ -97,8 +101,18 @@ form1.addEventListener("submit", function(event){
       containerScala.classList.toggle("changeElement");
       labeLScala.classList.toggle("colorLabel");
      });
-
-
+     containerKotlin.addEventListener('click', () => { 
+      containerKotlin.classList.toggle("changeColor");
+      labeLKotlin.classList.toggle("labelChangeColor");
+      containerKotlin.classList.toggle("changeElement");
+      labeLKotlin.classList.toggle("colorLabel");
+     });
+     containerswift.addEventListener('click', () => { 
+      containerswift.classList.toggle("changeColor");
+      labeLswift.classList.toggle("labelChangeColor");
+      containerswift.classList.toggle("changeElement");
+      labeLswift.classList.toggle("colorLabel");
+     });
 
 
   }
