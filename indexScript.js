@@ -27,7 +27,8 @@ form1.addEventListener("submit", function(event){
    
 });
 
-
+//Función hecha para resolver el parcial colocando la info en un label y 
+//luego colocandole un listener para que escuche el evento y cambien de color
   function chage(){
      //
      const containerJavaScript = document.getElementById('javaScriptChange');
@@ -116,5 +117,31 @@ form1.addEventListener("submit", function(event){
 
 
   }
+
+
+  //Función para capturar la información:
+  //llamando la clase vect del html que le coloqué a los inputs  con getElementById
+  //y se guargan en el array
+  var Captured = function(){
+    let information = document.getElementsByClassName("vectorArray"),
+        saveArray = [];         
+    for (var i = 0; i < information.length; i++) {    
+      saveArray[i] = information[i].value;
+        console.log (information[i].value);     
+        console.log (information[i].length); 
+        }       
+    }
+
+  //Función para mostrar el contenido del array
+  /*var show = function(){
+    for (var i = 0; i < saveArray.length; i++) {                    
+      document.write (saveArray[i]);
+        }
+    }*/
+
   
+  
+  //Llamando las funciones
   chage();
+  Captured();
+  //show();
