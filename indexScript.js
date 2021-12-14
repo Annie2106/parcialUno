@@ -244,9 +244,7 @@ boton.addEventListener('click', () => {
 
 
 //------------------------------------------------------------------------
-
-
-var vectorName =[],
+/** var vectorName =[],
     vectorLastName =[];
 
 
@@ -301,7 +299,9 @@ function fiilInTable(){
   }
 
 }
-fiilInTable()
+fiilInTable()*/
+
+
 
 
 
