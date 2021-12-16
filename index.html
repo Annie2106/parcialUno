@@ -794,7 +794,7 @@
 
 
 
-            <!--Botón para mostrar los elementos en el contenedor desde el vestor o localStorage-->
+            <!--Botón para mostrar los elementos en el contenedor desde el vector-->
             <button type="button" id="showInformation" value="show" class="btn btn-light">Mostrar</button>
         </div>
 
@@ -811,20 +811,30 @@
 
 
     <!--Para mostrar acá los datos del localStorage de la función fillInTable()-->
-    <table>
-        <thead id="informationTable">
-            <thead>
+    <div>
+        <table class="table" id="informationTable">
+            <thead >
                 <tr>
-                    <th>Name</th>
-                    <th>Last Name</th>
-
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Email</th>
+                    <!--<th scope="col">Email Verificado</th>-->
+                    <th scope="col">Teléfono</th>
+                    <th scope="col">Dirección</th>
+                    <th scope="col">Fecha Nace</th>
+                    <th scope="col">Estatura</th>
+                    <th scope="col">Contraseña</th>
+                    <!--<th scope="col">Contraseña Verificada</th>-->
+                    <th scope="col">Bio</th>
                 </tr>
             </thead>
-        </thead>
-        <tbody>
+            <tbody class="bdtable" id="bdtable">
 
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+        <!--Botón para mostrar los elementos en el contenedor desde el vestor o localStorage-->
+        <button type="button" id="showInformation" value="show" class="btn btn-light">Mostrar</button>
+    </div>
 
 
 
