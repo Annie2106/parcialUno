@@ -52,6 +52,7 @@ function change() {
   const containerKotlin = document.getElementById('kotlinChange');
   const containerswift = document.getElementById('swiftChange');
 
+  const labelJavaScript = document.getElementById('javaScriptLabelChange');
   const labelPython = document.getElementById('PythonLabelChange');
   const labelJava = document.getElementById('javaLabelChange');
   const labeLc = document.getElementById('cLabelChange');
@@ -127,7 +128,7 @@ function change() {
 }
 change();
 
-//------------------------------------------------------------------------
+
 
 //Vector
 
@@ -183,128 +184,88 @@ showVector();
 
 //------------------------------------------------------------------------
 
-/**Persistencia con localStorage: Tener la data que estamos trabajando en el ejercicio que les deje la clase pasada, 
-persistida en el web Storage. Pasarlo a persistencia con localStorage */
-
-
-
-/**Importante:
-Para mantener la organización: Se debe manejar (JSON o en 
-lógica en manera de diccionario o como un JSon {cada cantidad de datos}
-o sacar toda la data en una sola función y eso queda como un archivo JSON:
-const data = Object.fromEntries(new FormData(event.target).entries())
-console.log(data);
-writeDocument(data) 
-Para evitarse todas esas líneas de cod--> crea esa data y le hace push al array con esa data y limpia y 
-cada vez que se va ingresando va haciendo lo mismo
-y ahí garantiza que esa data mantiene la estructura de un JSON
-y para traerlo lo q se hace es recorrer el array y traer el objeto y ya ahí se puede modificar */
-
-
-
-const boton = document.querySelector('#showInformation');
-boton.addEventListener('click', () => {
-
-  function showInformationFromLocalStorage() {
-    /*Obtener datos almacenados*/
-    let nameVarGet = localStorage.getItem("Name");
-    let lastNameGet = localStorage.getItem("LastName");
-    let emailGet = localStorage.getItem("Email");
-    let emailVerifyGet = localStorage.getItem("LastName");
-    let phoneGet = localStorage.getItem("LastName");
-    let addressGet = localStorage.getItem("LastName");
-    let birthGet = localStorage.getItem("LastName");
-    let heightGet = localStorage.getItem("LastName");
-    let passwordGet = localStorage.getItem("LastName");
-    let passwordReviewGet = localStorage.getItem("LastName");
-    let textareaGet = localStorage.getItem("LastName");
-
-    /**Además de almacenar la data, se tiene que mostrar en un contenedor
-    cada vez q se grabe un nuevo campo se va ir crediendo ese contenedor porq va a tener más data 
-    los datos son acumulativos por más q se cierre el navegador y se actualice la página deben persistir y seguir mostrandose ahí
-    lo q ya se creo debe seguir almacenado al volverlo abrir */
-    /*Mostrar datos almacenados*/
-    document.getElementById("name").innerHTML = nameVarGet;
-    document.getElementById("lastNames").innerHTML = lastNameGet;
-    document.getElementById("email").innerHTML = emailGet;
-    document.getElementById("emailVerify").innerHTML = emailVerifyGet;
-    document.getElementById("phone").innerHTML = phoneGet;
-    document.getElementById("address").innerHTML = addressGet;
-    document.getElementById("birth").innerHTML = birthGet;
-    document.getElementById("height").innerHTML = heightGet;
-    document.getElementById("password").innerHTML = passwordGet;
-    document.getElementById("passwordReview").innerHTML = passwordReviewGet;
-    document.getElementById("textarea").innerHTML = textareaGet;
-  }
-
-  showInformationFromLocalStorage()
-})
-
 
 
 
 //------------------------------------------------------------------------
-/** var vectorName =[],
-    vectorLastName =[];
+
+const boton = document.querySelector('#showInformation');
+boton.addEventListener('click', () => {
+
+  function saveInformationFromLocalStorage() {
 
 
-var elementShowButton = document.querySelector('#showInformation');
-elementShowButton.addEventListener('click', saveOnLocalStoarge);
+    /**Además de almacenar la data, se tiene que mostrar en un contenedor
+   cada vez q se grabe un nuevo campo se va ir crediendo ese contenedor porq va a tener más data 
+   los datos son acumulativos por más q se cierre el navegador y se actualice la página deben persistir y seguir mostrandose ahí
+   lo q ya se creo debe seguir almacenado al volverlo abrir */
+    /*Mostrar datos almacenados*/
+    let nameVar = document.getElementById("name").value;
+    let lastNamesVar = document.getElementById("lastNames").value;
+    let emailVar = document.getElementById("email").value;
+    let emailVerifyVar = document.getElementById("emailVerify").value;
+    let phoneVar = document.getElementById("phone").value;
+    let addressVar = document.getElementById("address").value;
+    let birthVar = document.getElementById("birth").value;
+    let heightVar = document.getElementById("height").value;
+    let passwordVar = document.getElementById("password").value;
+    let passwordReviewVar = document.getElementById("passwordReview").value;
+    let textAreaBioVar = document.getElementById("textarea").value;
 
-function saveOnLocalStoarge(){
-  var nameUser = document.querySelector("#name").value;
-  var lastNameUser = document.querySelector("#lastNames").value;
-
-  vectorName.push(nameUser);
-  vectorLastName.push(lastNameUser);
-
-  localStorage.setItem('name_user', JSON.stringify(vectorName));
-  localStorage.setItem('lastName_user', JSON.stringify(vectorLastName));
-}
-saveOnLocalStoarge()
-
-
-
-
-function fiilInTable(){
-  var getInformationFromTbody = document.querySelector('informationTable tbody');
-
-  //Limpiar el tbody para q los datos no se vayan a duplicar más adelante
-  //tbody.innerHTML = '';
-
-  //Creo variable para cada uno de los arreglos --> lo contrario que setItem ahora con getItem para sacarlo de localStorage
-  //Estaba en texto lo vuelvo a convertir a arreglo --> JSON.parse
-  vectorName = JSON.parse(localStorage.getItem(name_user));
-  vectorLastName = JSON.parse(localStorage.getItem(lastName_user));
-
-
-  var nQuantityRecords = vectorName.length;
-
-  var row = document.createElement('tr'),
-
-  for(var i = 0; i < nQuantityRecords; i++){
-
-    //creando dilas
-    var cellName = document.createElement('td'),
-        cellLastName = document.createElement('td');
-
-        //creando nodos
-    var nodeTextName = document.createTextNode(vectorName[i]),
-    var nodeTextLastName = document.createTextNode(vectorLastName[i]);
-
-    //asignando el nodo a la celda y esto a la fila
-    row.appendChild(cellName.appendChild(nodeTextName)),
-    row.appendChild(cellLastName.appendChild(nodeTextLastName));
+    localStorage.setItem('Name', nameVar);
+    localStorage.setItem('LastName', lastNamesVar);
+    localStorage.setItem('Email', emailVar);
+    localStorage.setItem('EmailVerify', emailVerifyVar);
+    localStorage.setItem('Phone', phoneVar);
+    localStorage.setItem('Address', addressVar);
+    localStorage.setItem('Birth', birthVar);
+    localStorage.setItem('Height', heightVar);
+    localStorage.setItem('Password', passwordVar);
+    localStorage.setItem('PasswordReview', passwordReviewVar);
+    localStorage.setItem('TextAreaBio', textAreaBioVar);
 
   }
 
+  saveInformationFromLocalStorage()
+
+
+
+function showInformationFromLocalStorage() {
+  /*Obtener datos almacenados*/
+  let name = localStorage.getItem('Nombre');
+  let lastNames = localStorage.getItem('LastName');
+  let email = localStorage.getItem('Email');
+  let emailVer = localStorage.getItem('EmailVerify');
+  let phone = localStorage.getItem('Phone');
+  let address = localStorage.getItem('Address');
+  let birth = localStorage.getItem('Birth');
+  let height = localStorage.getItem('Height');
+  let password = localStorage.getItem('Password');
+  let passwordReview = localStorage.getItem('PasswordReview');
+  let textAreaBio = localStorage.getItem('TextAreaBio');
+
+  document.getElementById("name").innerHTML = name;
+  document.getElementById("lastNames").innerHTML = lastNames;
+  document.getElementById("email").innerHTML = email;
+  document.getElementById("emailVer").innerHTML = emailVer;
+  document.getElementById("phone").innerHTML = phone;
+  document.getElementById("address").innerHTML = address;
+  document.getElementById("birth").innerHTML = birth;
+  document.getElementById("height").innerHTML = height;
+  document.getElementById("password").innerHTML = password;
+  document.getElementById("passwordReview").innerHTML = passwordReview;
+  document.getElementById("textAreaBio").innerHTML = textAreaBio;
 }
-fiilInTable()*/
 
+})
 
+//Mostrando elementos del localStorage en la tabla
+function showInformationFromLocalOnTable() {
+  let ans = document.getElementById('showInformation');
+  
+  for (const information of data) {
+   
 
-
-
-
-
-
+  }
+}
+showInformationFromLocalOnTable();
